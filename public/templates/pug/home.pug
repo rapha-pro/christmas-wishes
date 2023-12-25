@@ -1,0 +1,24 @@
+extends base
+
+block content
+    h1 
+        video#background-video(autoplay muted)
+            source(src="../../assets/merry_xmas.mp4" type="video/mp4")
+            p Your browser does not support the video tag.
+        button#mute-toggle Toggle Mute
+
+
+        
+        div#home-div
+            #home-text 
+                h2
+
+    
+
+    script.
+        const video = document.getElementById('background-video');
+        const muteToggle = document.getElementById('mute-toggle');
+
+        muteToggle.addEventListener('click', () => {
+            video.muted = !video.muted;
+        });
