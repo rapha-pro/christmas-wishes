@@ -1,16 +1,15 @@
 {
     "version": 2,
     "builds": [
-     {
-      "src": "xmas.js",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
-     }
+        {
+            "src": "xmas.js",
+            "use": "@now/node"
+        }
     ],
     "routes": [
-     {
-      "src": "/(.*)",
-      "dest": "xmas.js"
-     }
+        {
+            "src": "/(.*)",
+            "dest": "xmas.js"
+        }
     ]
-   }
+}
