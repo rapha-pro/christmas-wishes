@@ -1,0 +1,203 @@
+doctype html
+html(lang='en')
+  // Basic
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    // Mobile Metas
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    // Site Metas
+    title Rapha&euml;l Xmas
+    meta(name='keywords', content='')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    // Site Icons
+    link(rel='shortcut icon', href='#', type='image/x-icon')
+    link(rel='apple-touch-icon', href='#')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    // Pogo Slider CSS
+    link(rel='stylesheet', href='css/pogo-slider.min.css')
+    // Site CSS
+    link(rel='stylesheet', href='css/style.css')
+    // Responsive CSS
+    link(rel='stylesheet', href='css/responsive.css')
+    // Custom CSS
+    link(rel='stylesheet', href='css/custom.css')
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body#home(data-spy='scroll', data-target='#navbar-wd', data-offset='98')
+    // LOADER
+    #preloader
+      .loader
+        .box
+        | &#x9;&#x9;&#x9;
+        .box
+    // end loader
+    // END LOADER
+    // Start header
+    header.top-header
+      nav.navbar.header-nav.navbar-expand-lg
+        .container
+          a.navbar-brand(href='index.html')
+            img(src='images/logo.png', alt='image')
+          | &#x9;&#x9;&#x9;&#x9;
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar-wd', aria-controls='navbar-wd', aria-expanded='false', aria-label='Toggle navigation')
+            span
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            span
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            span
+          #navbar-wd.collapse.navbar-collapse.justify-content-end
+            ul.navbar-nav
+              li
+                a.nav-link.active(href='#home') Home
+              li
+                a.nav-link(href='#wish') You
+    // End header
+    // Start Banner
+    .ulockd-home-slider
+      .container-fluid
+        .row
+          #js-main-slider.pogoSlider
+            .pogoSlider-slide(style='background-image:url(images/slider-01.jpg);')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .pogoSlider-slide(style='background-image:url(images/xmas1.jpg);')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .pogoSlider-slide(style='background-image:url(images/xmas5.png);')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .pogoSlider-slide(style='background-image:url(images/xmas4.jpg);')
+          // .pogoSlider
+    // End Banner
+    // wish
+    #wish.about-box(style='padding-bottom: 0;')
+      .about-a1
+        .container
+          .row
+            .col-lg-12
+              .title-box
+                h2 Best Wishes
+          | &#x9;&#x9;&#x9;&#x9;
+          .row
+            .col-lg-12.col-md-12.col-sm-12
+              .row.align-items-center.about-main-info
+                .col-lg-6.col-md-6.col-sm-12.text_align_center
+                  .full
+                    img.img-responsive(src='images/w1.png', alt='#')
+                .col-lg-6.col-md-6.col-sm-12
+                  h2
+                    img(style='width: 60px;', src='images/head_s.png', alt='#')
+                    |  #{name} Wishes
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p
+                    | Hey #{name}, I trust this message finds you well in the midst the festive hustle. Amidst the whirlwind of holiday activities, I just wanted to steal a moment to express my heartfelt gratitude for having you by my side.
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p
+                    | As time has gracefully woven its way through months and years, I thank God for having you, and I appreciate every shared conversation, every shared laughter, and every shared smile. Nurturing enduring friendships can be a challenge, but the strength of our bond fills me with hope.
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  a.hvr-radial-out.button-theme(href='#') you&apos;re special
+      |  
+      | &#x9;&#x9;
+      .about-a1(style='background:#f7f7f7;margin-top: 50px;padding-top: 75px;padding-bottom: 50px;')
+        .container
+          .row
+            .col-lg-12.col-md-12.col-sm-12
+              .row.align-items-center.about-main-info
+                .col-lg-6.col-md-6.col-sm-12
+                  h2
+                    img(style='width: 60px;', src='images/head_s.png', alt='#')
+                    |  More Wishes...
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p
+                    | Probably growing older, we might take a look back to these times where we had much fun and would have loved to enjoy every part of it.
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p
+                    | There is no better time than the present. May we cherish every fleeting moment, living each day with gratitude and guided by the grace of the Almighty.
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p
+                    | Wishing you a Merry Christmas and a forthcoming year filled with happiness and prosperity!
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p
+                    | May you have a warm and joyful holiday season. Here&apos;s to the beautiful moments we&apos;ve shared and to many more adventures together!
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  a.hvr-radial-out.button-theme(href='#') true friendship
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .col-lg-6.col-md-6.col-sm-12.text_align_center
+                  .full
+                    img.img-responsive(src='images/w2.png', alt='#')
+    // wish us
+    // Start Subscribe
+    .subscribe-box
+      .container
+        .row
+          .col-lg-12
+            .subscribe-inner.text-center.clearfix
+              h2 Rapha&euml;l O.
+    // End Subscribe
+    // Video Start
+    .wish
+      .container
+        .row
+          div
+            .wish-div(style='display: flex; flex-wrap: wrap;')
+              .video-div(style='margin: 5% 5%; flex: 7')
+                // <img src="./images/xmas3.jpg" alt="christmas wish" />
+                video(src='./images/xmas_video2.mp4', alt='christmas wish', type='video/mp4', autoplay='', muted='', loop='', style='border-radius: 10px; object-fit: cover;')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .wish-text(style='flex: 7; position: relative; top: 3rem; margin-bottom: 10%;')
+                h2 Have you ever wondered what&apos;s christmas?
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Christmas, with its twinkling lights and heartwarming melodies, is a time that brings enchantment to the world.
+                  | It&apos;s a season of joy, kindness, and the magic of giving. As winter winds weave through the air, families gather around
+                  | the glow of festive decorations, creating a tapestry of shared moments and cherished traditions.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | The aroma of seasonal delights fills the air, and the spirit of Christmas wraps us in a comforting embrace. Beyond the exchange of gifts
+                  | lies the true essence of Christmas&mdash;a celebration of love, generosity, and the warmth found in the company of loved
+                  | ones.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Whether in the hush of snowfall or the gentle glow of starlit nights, Christmas is a beacon of hope,
+                  | reminding us to embrace the beauty of the season and to carry its spirit of goodwill throughout the year.
+    // Video Ends
+    // Start Footer
+    footer.footer-box
+      .container
+        .row
+          .col-lg-12
+            p.footer-company-name
+              | Common License. &copy; 2023 
+              a(href='https://nathonana.com/') nathonana.com
+              |  Design By : 
+              a(href='') html design
+    // End Footer
+    a#scroll-to-top.hvr-radial-out(href='#')
+      i.fa.fa-angle-up
+    // ALL JS FILES
+    script(defer)
+      alert(`Hello ${name}. Welcome`)
+    script(src='js/jquery.min.js')
+    | &#x9;
+    script(src='js/popper.min.js')
+    | &#x9;
+    script(src='js/bootstrap.min.js')
+    // ALL PLUGINS
+    script(src='js/jquery.magnific-popup.min.js')
+    script(src='js/jquery.pogo-slider.min.js')
+    |  
+    | &#x9;
+    script(src='js/slider-index.js')
+    | &#x9;
+    script(src='js/smoothscroll.js')
+    | &#x9;
+    script(src='js/form-validator.min.js')
+    script(src='js/contact-form-script.js')
+    | &#x9;
+    script(src='js/isotope.min.js')
+    | &#x9;
+    | &#x9;
+    script(src='js/images-loded.min.js')
+    | &#x9;
+    script(src='js/custom.js')
