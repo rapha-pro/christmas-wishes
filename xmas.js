@@ -6,7 +6,7 @@ const app = express();
 /**
  * SETTING UP EXPRESS BOILER PLATE CODE
  */
-app.use(express.static("eventon-christmas-master", {index: "eventon-christmas-master/"}));
+app.use(express.static("public", {index: "public"}));
 
 //Body parser
 app.use(express.urlencoded({extended: true}));
@@ -18,7 +18,7 @@ app.use(express.json());
 app.set("view engine", "pug");
 
 // you can set the base views directory with:
-app.set("views", "./eventon-christmas-master");
+app.set("views", "./public");
 
 app.use(homeRouter);
 
